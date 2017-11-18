@@ -1,0 +1,8 @@
+def angm(ls)	
+	angms = {}
+	for w in ls:
+    	x = ''.join(sorted(w))
+    	try:
+       		angms[x].append(w)
+    	except KeyError:
+        	anagrams[x] = [w]

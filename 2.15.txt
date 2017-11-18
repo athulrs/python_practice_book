@@ -1,0 +1,9 @@
+def unique(L):
+	b = set(L)
+	c = {}
+	d = []
+	for i in b:
+    		c[a.index(i)] = i
+	for i in c:
+    		d.append(c[i])
+	return d

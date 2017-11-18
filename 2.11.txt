@@ -1,0 +1,6 @@
+def dupl(L):
+	nl = set()
+	for x in L:
+     		if L.count(x) > 1:
+         		nl.add(x)
+	return list(nl)

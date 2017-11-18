@@ -1,0 +1,10 @@
+def cm_sum(L):
+	if all(isinstance(n,int) for n in L):
+		s = 0
+	else:
+		s = ""
+	out = []	
+	for i in L:
+		s += i
+    		out.append(s)
+	return out

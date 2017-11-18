@@ -1,0 +1,6 @@
+def interchange(d):
+	for k in list(a):
+    		if a[k] != k:
+        		a[a[k]] = k
+        		del a[k]
+	print(a.items())

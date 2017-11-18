@@ -1,0 +1,5 @@
+def keysort(d):
+	k = d.keys()
+	k.sort()
+	for i in k:
+    		print "%s: %s" % (i,d[k])

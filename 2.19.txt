@@ -1,0 +1,18 @@
+def head(fl):
+	i=0
+	l=len(open(fl).readlines())-1
+	x=open(fl).readlines()
+	while i<10:
+		x[i]=x[i].strip('\n')
+		print(x[i])
+		i=i+1
+
+def tail(fl):
+	i=0
+	l=len(open(fl).readlines())-1
+	lim=l-10
+	x=open(fl).readlines()
+	while l>lim:
+		f[l]=f[l].strip('\n')
+        	print f[l]
+		lim=l-1

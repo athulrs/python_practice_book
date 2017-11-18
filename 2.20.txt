@@ -1,0 +1,9 @@
+def grp(fl,s):
+    i=0
+    f=open(fl).readlines()
+    l=len(f)
+    while i<l:
+	if(s in f[i]):
+         	f[i]= f[i].strip('\n')
+	 	print f[i]
+	i=i+1

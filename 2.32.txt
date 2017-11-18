@@ -1,0 +1,6 @@
+def split(l,x):
+    for d in x:
+        item,l = l.split(d, 1)
+        yield item
+    else:
+        yield l

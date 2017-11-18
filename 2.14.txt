@@ -1,0 +1,6 @@
+def uniq(L,x):
+    i=0
+    while i<len(L):
+         L[i]=x(L[i])
+         i=i+1
+    return uniq(L)
