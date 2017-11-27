@@ -1,0 +1,5 @@
+def enmrt(ls):
+    	l = range(len(x))
+    	t = zip(l,ls)
+    	n = [(a,b) for a,b in zip(l,ls]
+	return n

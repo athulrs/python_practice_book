@@ -1,0 +1,5 @@
+def revr(L):
+   list = []
+   for i in range(0, len(L)):
+     list.append(L[len(L) - i - 1])
+   return list

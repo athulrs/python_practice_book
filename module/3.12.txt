@@ -1,0 +1,5 @@
+import inspect
+def mydoc(x):
+	f = []
+	f = inspect.getmembers(x, inspect.isfunction)
+	print(f)

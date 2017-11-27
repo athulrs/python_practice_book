@@ -1,0 +1,4 @@
+def rev(fl):
+	with open('fl', 'r') as f:
+   		for line in reversed(list(f.readlines())):
+        		print(line)

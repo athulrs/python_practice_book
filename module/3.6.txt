@@ -1,0 +1,7 @@
+from string import find
+import urllib
+def wget(x):
+     u = urllib.urlopen(x)
+     for file in u.read:
+     	result = re.sub("<.*?>", "", v)
+     	print(result)

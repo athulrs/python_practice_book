@@ -1,0 +1,12 @@
+def group(L,n):
+	x=[]
+	i=0
+	while i<len(L):
+		if len(x)<=n:
+        		L.append(x[i:i + chunk])
+    	else:
+       	 	x.append(L[i:])
+        	break
+    	i+=chunk
+	return x   
+	

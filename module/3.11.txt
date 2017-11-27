@@ -1,0 +1,5 @@
+import zipfile
+def zip(x,y):
+	f=ZipFile(x,'w')
+	for n in y:
+		f.write(n)

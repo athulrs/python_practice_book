@@ -1,0 +1,8 @@
+import os
+def pyfiles():
+	l=[]
+        for path,dir,file in os.walk(os.getcwd()):
+                for i in file:
+			if ".py" in i:
+				l.append(os.path.join(path,i))
+	print(l,len(l))

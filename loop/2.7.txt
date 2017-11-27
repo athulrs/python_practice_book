@@ -1,0 +1,25 @@
+#min max
+
+def minimum(x):
+    mini = x[0]
+    if all(isinstance(n, int) for n in x):
+        for i in x[0:]:
+            if i < mini:
+                mini = i
+    else:
+         for i in x[0:]:
+            if len(i) < len(mini):
+                mini = i
+    return mini
+
+def maximum(x):
+    maxi = x[0]
+    if all(isinstance(n, int) for n in x):
+        for i in x[0:]:
+            if i > maxi:
+                maxi = i
+    else:
+         for i in x[0:]:
+            if len(i) > len(maxi):
+                maxi = i
+    return maxi

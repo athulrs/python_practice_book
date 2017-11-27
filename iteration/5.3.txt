@@ -1,0 +1,5 @@
+import os
+def findfiles(x):
+	for path,dir,file in os.walk(os.getcwd()):
+		if x in file:
+			print os.path.join(path,x)

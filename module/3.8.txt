@@ -1,0 +1,13 @@
+import urllib
+import re
+import sys
+def links(u):
+	url = "http://www.somewhere.com"
+	x = urllib.urlopen(url)
+	x = x.read()
+	links = re.findall("((http|href)s?://.*?)",x)
+	for link in links:
+    		print(link[0])
+
+
+links(sys.argv[1])

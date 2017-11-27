@@ -1,0 +1,13 @@
+import os
+def extcount(x):
+	dict = {}
+	for files in os.listdir(x):
+    		for file in files:
+        		ext = os.splitext(file)[1]
+        		if ext in dict:
+            			dict[ext] += 1
+        		else:
+            			dict[ext] = 1
+	
+	for ext,count in dict.items():
+    		print(ext,count)

@@ -1,0 +1,2 @@
+def func_map(f,x):
+    return [f(a) for a in x]

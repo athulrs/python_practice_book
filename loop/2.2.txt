@@ -1,0 +1,5 @@
+def sum(L):
+	sum=0
+	for element in L:	
+	    sum+=element
+	return sum

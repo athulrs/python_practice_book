@@ -1,0 +1,5 @@
+def validate(num):
+    rule = re.compile(r'^[07]\d{9,13}$')
+    if not rule.search(num):
+        print("invalid")
+	break

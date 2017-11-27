@@ -1,0 +1,5 @@
+def wfq(w):
+    f = {}
+    for i in w:
+        f[i] = f.get(i, 0) + 1
+    return f

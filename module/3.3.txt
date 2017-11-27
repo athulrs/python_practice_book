@@ -1,0 +1,12 @@
+import os
+import time
+def dirfiles(x):
+	l = os.listdir(x)
+        d={}
+	i=0
+        while i<len(l):
+                p=os.stat(os.getcwd()+'/'+l[i])
+		mod = time.ctime(p.st_mtime)
+		size = p.st_size
+		print(l[i],'\t' mod,'\t',size)
+                i=i+1

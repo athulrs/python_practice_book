@@ -1,0 +1,15 @@
+def wrap(f,wid):
+    i=0
+    fl=''
+    s=open(f).read()
+    k=len(s)
+    while i<k:
+	if(len(fl)%wid==0 and len(fl)!=0):
+	  	fl=fl + '\n'
+        else:
+            	if(s[i]!='\n'):
+	     		fl=fl + s[i]
+	    	else:
+	     		fl = fl + ' '
+	i=i+1
+    return fl

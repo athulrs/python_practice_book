@@ -1,0 +1,4 @@
+def sum(L):
+	for i in len(L):
+		x += L[i]
+	return x

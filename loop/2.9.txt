@@ -1,0 +1,7 @@
+def cm_sum(L):
+	s = 1
+	out = []	
+	for i in L:
+		s *= i
+    		out.append(s)
+	return out

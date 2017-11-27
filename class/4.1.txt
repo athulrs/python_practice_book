@@ -1,0 +1,4 @@
+#output
+
+A B
+A B

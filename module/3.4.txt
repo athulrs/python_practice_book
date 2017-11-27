@@ -1,0 +1,9 @@
+import os
+def dir_tree(x):
+    for root,dirs,files in os.walk(x):
+        indent = ' ' * 4
+        print('{}{}/'.format(indent,os.path.basename(root)))
+        for f in files:
+            print('\t''{}{}'.format(indent, f))
+            
+list_files(os.getcwd())

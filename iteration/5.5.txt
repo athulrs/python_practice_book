@@ -1,0 +1,10 @@
+import os
+def totnum(d):
+	l = []
+	for pyfiles in os.walk(cur_path):
+    		for pyfile in pyfiles:
+        		if pyfile.endswith(".py"):
+            			tot = os.path.join(pydir, pyfile)
+            			l.append( ( len(open(tot, "r").read().splitlines()),
+                                tot.split(cur_path)[1]) )
+

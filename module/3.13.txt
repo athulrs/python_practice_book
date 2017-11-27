@@ -1,0 +1,11 @@
+import tablib
+def csv2xls(x,y):
+	data=tablib.Dataset()
+	n = open(x)
+	l=len(n.readlines())
+	i=0
+	while i<l:
+		data.append([i,n.readline().strip()])
+		i=i+1
+	with open(y+'.xls','wb') as n:
+		n.write(data.xls)
